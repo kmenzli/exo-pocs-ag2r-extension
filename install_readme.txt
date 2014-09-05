@@ -1,0 +1,5 @@
+-/ Décompresser le fichier exo-pocs-ag2r-extension-pkg-1.0-SNAPSHOT.zip
+-/ Copier le fichier /ag2r/conf/chat.properties dans TOMCAT_BUNDLE/conf
+-/ Copier les jars depuis /ag2r/lib dans TOMCAT_BUNDLE/lib
+-/ Copier les wars depuis /ag2r/lib dans TOMCAT_BUNDLE/webapps
+-/ Lancer le serveur
