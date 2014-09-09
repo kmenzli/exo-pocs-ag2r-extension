@@ -11,10 +11,18 @@
     <artifactId>exo-pocs-ag2r-extension-resources</artifactId>
     <name>Poc AG2R Extension Resources</name>
     <packaging>war</packaging>
+    <dependencies>
+        <!-- We want to be sure to use the right version in the dependency plugin but it's not required in the package -->
+        <dependency>
+            <groupId>org.exoplatform.platform-ui</groupId>
+            <artifactId>platform-ui-web-eXoResources</artifactId>
+            <type>war</type>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <finalName>poc-ag2r-resources</finalName>
-
         <plugins>
             <!-- Copy project less files -->
             <plugin>
@@ -72,7 +80,7 @@
                 <artifactId>lesscss-maven-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>poc-ag2r-resources</id>
+                        <id>administration</id>
                         <phase>process-resources</phase>
                         <goals>
                             <goal>compile</goal>
@@ -81,15 +89,13 @@
                             <sourceDirectory>${project.build.directory}/${project.build.finalName}/skin/less</sourceDirectory>
                             <outputDirectory>${project.build.directory}/${project.build.finalName}/skin/css</outputDirectory>
                             <includes>
-                                <include>ag2r.less</include>
-                                <!--<include>portlets/UIMySpacesPortlet/Style.less</include>-->
+                                <include>UIAG2RUserNavigationPortlet/UIAG2RUserNavigationPortlet.less</include>
                             </includes>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
-
     </build>
 
 </project>
