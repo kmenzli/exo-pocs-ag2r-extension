@@ -123,7 +123,7 @@ public class UIAG2RUserNavigationPortlet extends UIPortletApplication {
         return LinkProvider.getUserProfileUri(getOwnerRemoteId());
     }
     public static String getMySpacesUri(final String remoteId) {
-        return getBaseUri(null, null) + "/spaces";
+        return getBaseUri(null, null) + "/spaces"+ROUTE_DELIMITER+Utils.getOwnerRemoteId();
     }
     private static String getBaseUri(final String portalName, String portalOwner) {
         return "/" + getPortalName(portalName) + "/" + getPortalOwner(portalOwner);
