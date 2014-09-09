@@ -81,8 +81,8 @@ public class UIAG2RUserNavigationPortlet extends UIPortletApplication {
         userNodeList=(String[])ArrayUtils.add(userNodeList, ACTIVITIES_URI);
         userNodeList=(String[])ArrayUtils.add(userNodeList, CONNEXIONS_URI);
         userNodeList=(String[])ArrayUtils.add(userNodeList, WIKI_URI);
-        userNodeList=(String[])ArrayUtils.add(userNodeList, DASHBOARD_URI);
         userNodeList=(String[])ArrayUtils.add(userNodeList, MYSPACES_URI);
+        userNodeList=(String[])ArrayUtils.add(userNodeList, DASHBOARD_URI);
         return userNodeList;
     }
 
@@ -91,8 +91,9 @@ public class UIAG2RUserNavigationPortlet extends UIPortletApplication {
         urlList=(String[])ArrayUtils.add(urlList, getactivitesURL());
         urlList=(String[])ArrayUtils.add(urlList, getrelationURL());
         urlList=(String[])ArrayUtils.add(urlList, getWikiURL());
+        urlList=(String[])ArrayUtils.add(urlList, getMySpacesURL());
         urlList=(String[])ArrayUtils.add(urlList, DashboardUtils.getDashboardURL());
-            urlList=(String[])ArrayUtils.add(urlList, getMySpacesURL());
+
         return urlList;
     }
 

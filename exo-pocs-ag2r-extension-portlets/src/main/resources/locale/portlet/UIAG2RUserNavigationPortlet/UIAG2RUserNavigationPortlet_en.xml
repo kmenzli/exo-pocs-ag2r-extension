@@ -12,7 +12,7 @@
          <Myconnections>My Connections</Myconnections>
          <Mywiki>My Wiki</Mywiki>
          <Mydashboard>My Dashboard</Mydashboard>
-          <MySpaces>My Spaces</MySpaces>
+          <Myspaces>My Spaces</Myspaces>
       </label>
    </UIAG2RUserNavigationPortlet>
 </bundle>

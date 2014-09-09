@@ -32,7 +32,7 @@ boolean isOwner=  uicomponent.isProfileOwner();
 for (node in uicomponent.getUserNodesAsList()) {
     def nodeLabel;
     def str="UIAG2RUserNavigationPortlet.label."+node;
-    if (isOwner && ! node.equals(uicomponent.MYSPACES_URI)) str="UIAG2RUserNavigationPortlet.label.My"+node;
+    if (isOwner && ! node.equals(uicomponent.DASHBOARD_URI)) str="UIAG2RUserNavigationPortlet.label.My"+node;
     pageURL = urlList[i];
     def navigationTabClass = "";
     if ((uicomponent.isSelectedUserNavigation(node))||((node.equals(uicomponent.DASHBOARD_URI))&&(uicomponent.isSelectedUserNavigation("/u/")))) {
@@ -40,7 +40,7 @@ for (node in uicomponent.getUserNodesAsList()) {
     }
     %>
 
-    <% if  ((node.equals(uicomponent.DASHBOARD_URI) || node.equals(uicomponent.MYSPACES_URI))&&(!isOwner))  continue;
+    <% if  ((node.equals(uicomponent.DASHBOARD_URI))&&(!isOwner))  continue;
     nodeLabel = _ctx.appRes(str);
     %>
 

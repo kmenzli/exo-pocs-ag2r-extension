@@ -12,7 +12,7 @@
          <Myconnections>Mes Connexions</Myconnections>
             <Mywiki>Mon Wiki</Mywiki>
          <Mydashboard>Mon Tableau de Bord</Mydashboard>
-            <MySpaces>Mes espaces</MySpaces>
+            <Myspaces>Mes espaces</Myspaces>
         </label>
     </UIAG2RUserNavigationPortlet>
 </bundle>
