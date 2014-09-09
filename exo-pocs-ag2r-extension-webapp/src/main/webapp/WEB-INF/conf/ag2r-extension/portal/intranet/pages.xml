@@ -41,14 +41,14 @@
         <title>My spaces</title>
         <access-permissions>*:/platform/users</access-permissions>
         <edit-permission>manager:/platform/administrators</edit-permission>
-        <container id="UIUserNavigationPortlet" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
+        <container id="UIAG2RUserNavigationPortlet" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
             <access-permissions>*:/platform/users</access-permissions>
             <portlet-application>
                 <portlet>
-                    <application-ref>platformNavigation</application-ref>
-                    <portlet-ref>UIUserNavigationPortlet</portlet-ref>
+                    <application-ref>poc-ag2r-extension-portlets</application-ref>
+                    <portlet-ref>UIAG2RUserNavigationPortlet</portlet-ref>
                 </portlet>
-                <title>User Navigation Portlet</title>
+                <title>AG2R User Navigation Portlet</title>
                 <access-permissions>*:/platform/users</access-permissions>
                 <show-info-bar>false</show-info-bar>
                 <show-application-state>true</show-application-state>

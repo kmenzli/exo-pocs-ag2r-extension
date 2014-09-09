@@ -1,0 +1,60 @@
+<%
+/**
+ * Copyright ( C ) 2012 eXo Platform SAS.
+ *
+ * This is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation; either version 2.1 of
+ * the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this software; if not, write to the Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+ */
+%>
+<%
+def uicomponentId = uicomponent.id;
+%>
+
+<div class="uiAG2RUserNavigationPortlet ClearFix" id="$uicomponentId">
+<ul class="nav nav-tabs userNavigation" style="">
+<%
+String[] urlList = uicomponent.getURLAsList();
+def i = 0;
+def pageURL;
+boolean isOwner=  uicomponent.isProfileOwner();
+for (node in uicomponent.getUserNodesAsList()) {
+    def nodeLabel;
+    def str="UIAG2RUserNavigationPortlet.label."+node;
+    if (isOwner && ! node.equals(uicomponent.MYSPACES_URI)) str="UIAG2RUserNavigationPortlet.label.My"+node;
+    pageURL = urlList[i];
+    def navigationTabClass = "";
+    if ((uicomponent.isSelectedUserNavigation(node))||((node.equals(uicomponent.DASHBOARD_URI))&&(uicomponent.isSelectedUserNavigation("/u/")))) {
+        navigationTabClass = "active";
+    }
+    %>
+
+    <% if  ((node.equals(uicomponent.DASHBOARD_URI) || node.equals(uicomponent.MYSPACES_URI))&&(!isOwner))  continue;
+    nodeLabel = _ctx.appRes(str);
+    %>
+
+    <li class="<%=navigationTabClass%>">
+    <a href="$pageURL">
+    <div class="uiIconApp<%=node%> uiIconDefaultApp"></div>
+				<span class="tabName"><%=nodeLabel%></span>
+    </a>
+		</li>
+
+    <%
+    i++;
+}
+%>
+</ul>
+
+</div>

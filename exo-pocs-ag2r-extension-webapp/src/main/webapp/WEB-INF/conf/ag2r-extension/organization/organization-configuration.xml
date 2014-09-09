@@ -91,16 +91,16 @@
                       <string>ag2r</string>
                     </field>
                     <field name="password">
-                      <string>gtn</string>
+                      <string>ag2r</string>
                     </field>
                     <field name="firstName">
-                      <string>Afpa</string>
+                      <string>AG2R</string>
                     </field>
                     <field name="lastName">
-                      <string>Afpa</string>
+                      <string>AG2R</string>
                     </field>
                     <field name="email">
-                      <string>afpa@localhost.com</string>
+                      <string>ag2r@localhost.com</string>
                     </field>
                     <field name="groups">
                       <string>

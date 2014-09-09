@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+   <UIAG2RUserNavigationPortlet>
+      <label>
+         <activities>アクティビティ ストリーム</activities>
+         <profile>プロフィール</profile>
+         <connections>つながり</connections>
+         <wiki>Wiki</wiki>
+         <Myactivities>マイ アクティビティ ストリーム</Myactivities>
+         <Myprofile>マイプロフィール</Myprofile>
+         <Myconnections>つながり</Myconnections>
+         <Mywiki>Wiki</Mywiki>
+         <Mydashboard>マイダッシュ ボード</Mydashboard>
+          <MySpaces>Mes espaces</MySpaces>
+      </label>
+   </UIAG2RUserNavigationPortlet>
+</bundle>

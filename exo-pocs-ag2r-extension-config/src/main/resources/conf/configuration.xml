@@ -45,13 +45,13 @@
                         <field name="dependencies">
                             <collection type="java.util.ArrayList">
                                 <value>
+                                    <string>poc-ag2r-resources</string>
+                                </value>
+                                <value>
                                     <string>poc-ag2r-extension-portlets</string>
                                 </value>
                                 <value>
                                     <string>poc-ag2r-extension</string>
-                                </value>
-                                <value>
-                                    <string>poc-ag2r-resources</string>
                                 </value>
                             </collection>
                         </field>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+    <UIAG2RUserNavigationPortlet>
+        <label>
+            <activities>Flux d'Activités</activities>
+         <profile>Profil</profile>
+            <connections>Connexions</connections>
+            <wiki>Wiki</wiki>
+            <spaces>Mes espaces</spaces>
+            <Myactivities>Mon Flux d'Activités</Myactivities>
+         <Myprofile>Mon Profil</Myprofile>
+         <Myconnections>Mes Connexions</Myconnections>
+            <Mywiki>Mon Wiki</Mywiki>
+         <Mydashboard>Mon Tableau de Bord</Mydashboard>
+            <MySpaces>Mes espaces</MySpaces>
+        </label>
+    </UIAG2RUserNavigationPortlet>
+</bundle>
