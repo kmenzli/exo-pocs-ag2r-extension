@@ -11,7 +11,8 @@
     <name>eXo POCs - AG2R POC  Set Extension Package</name>
     <properties>
         <!-- 3rd party libraries versions -->
-        <portlet.pack.version>0.1.0</portlet.pack.version>
+        <portlet.pack.version>0.2.0-SNAPSHOT</portlet.pack.version>
+        <chat.addon.version>0.9.1</chat.addon.version>
     </properties>
     <dependencies>
         <dependency>
@@ -43,6 +44,34 @@
             <artifactId>exo-addons-demo-portlets-webapp</artifactId>
             <version>${portlet.pack.version}</version>
             <type>war</type>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.exoplatform.addons.chat</groupId>
+            <artifactId>server</artifactId>
+            <version>${chat.addon.version}</version>
+            <type>war</type>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.exoplatform.addons.chat</groupId>
+            <artifactId>application</artifactId>
+            <version>${chat.addon.version}</version>
+            <type>war</type>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.exoplatform.addons.chat</groupId>
+            <artifactId>exo-addons-chat-extension</artifactId>
+            <version>${chat.addon.version}</version>
+            <type>war</type>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.exoplatform.addons.chat</groupId>
+            <artifactId>exo-addons-chat-extension-config</artifactId>
+            <version>${chat.addon.version}</version>
+            <type>jar</type>
             <scope>provided</scope>
         </dependency>
     </dependencies>

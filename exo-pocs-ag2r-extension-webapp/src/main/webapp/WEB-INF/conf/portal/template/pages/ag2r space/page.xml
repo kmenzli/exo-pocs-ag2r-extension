@@ -21,7 +21,66 @@
         </portlet-application>
     </container>
     <container id="SpaceApplications" template="system:/groovy/portal/webui/container/UITableColumnContainer.gtmpl">
-        <container id="LeftAgrContainer" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
+        <container id="ActivityStreamPortlet" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
+            <portlet-application>
+                <portlet>
+                    <application-ref>social-portlet</application-ref>
+                    <portlet-ref>SpaceActivityStreamPortlet</portlet-ref>
+                    <preferences>
+                        <preference>
+                            <name>SPACE_URL</name>
+                            <value>{spaceName}</value>
+                            <read-only>false</read-only>
+                        </preference>
+                    </preferences>
+                </portlet>
+                <show-info-bar>false</show-info-bar>
+            </portlet-application>
+        </container>
+        <container id="CollabApplicationContainer" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
+            <portlet-application>
+                <portlet>
+                    <application-ref>portlet-pack</application-ref>
+                    <portlet-ref>QuicklookApplication</portlet-ref>
+                    <preferences>
+                        <preference>
+                            <name>app</name>
+                            <value>Wiki</value>
+                            <read-only>false</read-only>
+                        </preference>
+                    </preferences>
+                </portlet>
+                <show-info-bar>false</show-info-bar>
+            </portlet-application>
+            <portlet-application>
+                <portlet>
+                    <application-ref>portlet-pack</application-ref>
+                    <portlet-ref>QuicklookApplication</portlet-ref>
+                    <preferences>
+                        <preference>
+                            <name>app</name>
+                            <value>Forum</value>
+                            <read-only>false</read-only>
+                        </preference>
+                    </preferences>
+                </portlet>
+                <show-info-bar>false</show-info-bar>
+            </portlet-application>
+            <portlet-application>
+                <portlet>
+                    <application-ref>portlet-pack</application-ref>
+                    <portlet-ref>QuicklookApplication</portlet-ref>
+                    <preferences>
+                        <preference>
+                            <name>app</name>
+                            <value>FAQ</value>
+                            <read-only>false</read-only>
+                        </preference>
+                    </preferences>
+                </portlet>
+                <show-info-bar>false</show-info-bar>
+            </portlet-application>
+            <!--
             <portlet-application>
                 <portlet>
                     <application-ref>presentation</application-ref>
@@ -92,22 +151,8 @@
                 <show-application-state>false</show-application-state>
                 <show-application-mode>false</show-application-mode>
             </portlet-application>
+            -->
         </container>
-        <container id="ActivityStreamPortlet" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
-            <portlet-application>
-                <portlet>
-                    <application-ref>social-portlet</application-ref>
-                    <portlet-ref>SpaceActivityStreamPortlet</portlet-ref>
-                    <preferences>
-                        <preference>
-                            <name>SPACE_URL</name>
-                            <value>{spaceName}</value>
-                            <read-only>false</read-only>
-                        </preference>
-                    </preferences>
-                </portlet>
-                <show-info-bar>false</show-info-bar>
-            </portlet-application>
-        </container>
+
     </container>
 </page>

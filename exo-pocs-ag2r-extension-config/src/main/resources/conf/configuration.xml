@@ -57,7 +57,7 @@
                         </field>
                         <!-- The name of the target dependency -->
                         <field name="target">
-                            <string>welcome-screens</string>
+                            <string>chat-extension</string>
                         </field>
                     </object>
                 </object-param>
