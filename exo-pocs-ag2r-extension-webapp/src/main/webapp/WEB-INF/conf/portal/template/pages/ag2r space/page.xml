@@ -67,13 +67,27 @@
                 <show-info-bar>false</show-info-bar>
             </portlet-application>
             <portlet-application>
+            <portlet>
+                <application-ref>portlet-pack</application-ref>
+                <portlet-ref>QuicklookApplication</portlet-ref>
+                <preferences>
+                    <preference>
+                        <name>app</name>
+                        <value>FAQ</value>
+                        <read-only>false</read-only>
+                    </preference>
+                </preferences>
+            </portlet>
+            <show-info-bar>false</show-info-bar>
+        </portlet-application>
+            <portlet-application>
                 <portlet>
                     <application-ref>portlet-pack</application-ref>
                     <portlet-ref>QuicklookApplication</portlet-ref>
                     <preferences>
                         <preference>
                             <name>app</name>
-                            <value>FAQ</value>
+                            <value>Agenda</value>
                             <read-only>false</read-only>
                         </preference>
                     </preferences>
