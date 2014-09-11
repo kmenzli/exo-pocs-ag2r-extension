@@ -28,7 +28,8 @@
     <page-nodes>
         <node>
             <name>faq</name>
-            <label xml:lang="en">FAQ</label>
+            <label xml:lang="en">Answers</label>
+            <label xml:lang="fr">Réponse</label>
             <visibility>DISPLAYED</visibility>
             <page-reference>portal::intranet::faq</page-reference>
         </node>

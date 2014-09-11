@@ -30,7 +30,7 @@
         <portlet-application>
             <portlet>
                 <application-ref>faq</application-ref>
-                <portlet-ref>FAQPortlet</portlet-ref>
+                <portlet-ref>AnswersPortlet</portlet-ref>
             </portlet>
             <access-permissions>Everyone</access-permissions>
             <show-info-bar>false</show-info-bar>
